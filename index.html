@@ -1,13 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universo de Colisiones</title>
-    <meta http-equiv="refresh" content="0; url=colision.html">
+    <title>Juego de Bellotas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #233b28;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: crosshair;
+        }
+    </style>
 </head>
 <body>
-    <p>Abriendo la simulación...</p>
-    <a href="colision.html">Entrar al Universo de Colisiones</a>
+    <canvas id="canvas"></canvas>
+    <script src="colision.js"></script>
 </body>
 </html>
